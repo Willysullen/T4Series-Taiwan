@@ -589,3 +589,42 @@ footer { background: var(--black); border-top: 1px solid var(--bdr); padding: 52
 /* NC stats 4-col */
 .nc-stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--bdr); border: 1px solid var(--bdr); border-radius: 6px; overflow: hidden; margin-bottom: 56px; }
 @media (max-width: 600px) { .nc-stats-grid { grid-template-columns: 1fr 1fr !important; } }
+
+/* === T4 Mobile Patch === */
+/* 1. Logo */
+.nav-logo img { height: 54px; }
+.nav-logo-host img { height: 28px; }
+.nav-mobile-partner img { height: 28px; }
+.host-band-logo img { height: 56px; }
+.tl-item img { height: 40px; }
+.footer-brand img { height: 56px; }
+.footer-partner-logos img { height: 24px; }
+/* 2. Readability */
+li { font-size: 14px; line-height: 1.7; }
+.section-subtitle { line-height: 1.85; }
+.hero-sub { font-size: 15px; line-height: 1.85; }
+.trust-desc { font-size: 13px; line-height: 1.75; }
+.tl-body { font-size: 13px; line-height: 1.75; }
+.tl-item-label, .ladder-card-tag, .host-band-tag { font-size: 10px; }
+/* 3. Mobile 768px */
+@media (max-width: 768px) {
+    html, body { overflow-x: hidden; max-width: 100%; }
+    .marquee-band { overflow: hidden; max-width: 100vw; }
+    .nav-logo img { height: 44px; }
+    .host-band-logo img { height: 46px; }
+    .tl-item img { height: 34px; }
+    .footer-partner-logos img { height: 20px; }
+    .footer-brand img { height: 48px; }
+    .ladder-card-name { font-size: 26px; }
+    .ladder-card-price { font-size: 18px; }
+    .btn { font-size: 13px; padding: 12px 20px; }
+    .btn-lg { font-size: 14px; padding: 14px 24px; }
+    .faq-a-inner { font-size: 14px; line-height: 1.75; }
+}
+/* 4. Small 420px */
+@media (max-width: 420px) {
+    .container { padding: 0 14px; }
+    .marquee-item { font-size: 10px; padding: 10px 14px; }
+    .footer-partner-logos img { height: 18px; }
+    .section { padding: 48px 0; }
+}
