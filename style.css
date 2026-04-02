@@ -889,3 +889,12 @@ img { max-width: 100%; height: auto; }
   .marquee-item { font-size: 9px !important; padding: 9px 14px !important; }
   [style*="grid-template-columns:1fr 1fr;gap:14px"] { grid-template-columns: 1fr !important; }
 }
+
+/* ── mob-1col: direct class for all inline grids ── */
+@media(max-width:768px){
+  .mob-1col{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:16px!important;
+  }
+}
