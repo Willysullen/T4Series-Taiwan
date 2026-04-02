@@ -3,190 +3,105 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>體驗 Experience | T4 Series Taiwan at Yong An Karting</title>
-<meta name="description" content="T4 Series Taiwan 官方現場影像。記者會、賽道、Tillotson T4 用車展示，感受台灣首個國際卡丁車賽事系統。"/>
+<title>體驗 Experience | T4 Series Taiwan</title>
+<meta name="description" content="T4 Series Taiwan 官方現場影像。T4 競技賽車、永安賽道空拍、發布會現場。"/>
+<meta property="og:title" content="體驗 Experience | T4 Series Taiwan"/>
+<meta property="og:image" content="https://willysullen.github.io/T4Series-Taiwan/og-image.jpg"/>
+<meta property="og:url" content="https://willysullen.github.io/T4Series-Taiwan/experience.html"/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://willysullen.github.io/T4Series-Taiwan/og-image.jpg"/>
 <link rel="stylesheet" href="style.css"/>
-<style>html,body{overflow-x:hidden;max-width:100vw;}</style>
-<style>
-@media(max-width:768px){
-  .gallery-grid-uniform{
-    display:flex!important;
-    flex-direction:column!important;
-    gap:10px!important;
-  }
-  .gallery-grid-uniform>div{
-    height:240px!important;
-    border-radius:6px!important;
-    overflow:hidden!important;
-  }
-}
-@media(max-width:420px){
-  .gallery-grid-uniform>div{
-    height:200px!important;
-  }
-}
-</style>
-  <meta property="og:title" content="體驗 Experience | T4 Series Taiwan"/>
-  <meta property="og:description" content="T4 Series Taiwan 官方現場影像。記者會、賽道空拍、Tillotson T4 競技賽車，感受藍色風暴。"/>
-  <meta property="og:image" content="https://willysullen.github.io/T4Series-Taiwan/og-image.jpg"/>
-  <meta property="og:image:width" content="1280"/>
-  <meta property="og:image:height" content="640"/>
-  <meta property="og:url" content="https://willysullen.github.io/T4Series-Taiwan/experience.html"/>
-  <meta property="og:type" content="website"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="體驗 Experience | T4 Series Taiwan"/>
-  <meta name="twitter:description" content="T4 Series Taiwan 官方現場影像。記者會、賽道空拍、Tillotson T4 競技賽車，感受藍色風暴。"/>
-  <meta name="twitter:image" content="https://willysullen.github.io/T4Series-Taiwan/og-image.jpg"/>
 </head>
 <body>
 <nav class="navbar" id="navbar">
   <div class="container nav-inner">
     <a href="index.html" class="nav-logo">
-      <img src="t4-logo.png" alt="T4 Series" style="height:60px"/>
+      <img src="t4-logo.png" alt="T4 Series"/>
       <div class="nav-logo-sep"></div>
       <div class="nav-logo-host"><img src="yongan_logo_inverted_keep_red.png" alt="Yong An"/></div>
     </a>
     <div class="nav-links">
       <a href="index.html">首頁</a>
-      <a href="experience.html" class="active">體驗</a>
+      <a href="experience.html">體驗</a>
       <a href="academy.html">訓練</a>
-      <a href="nationscup.html">Nations Cup</a><a href="ownership.html">購車</a>
+      <a href="nationscup.html">Nations Cup</a>
+      <a href="ownership.html">購車</a>
       <a href="contact.html" class="nav-cta">立即預約</a>
     </div>
-    <button class="nav-hamburger" aria-label="選單"><span></span><span></span><span></span></button>
+    <button class="nav-hamburger" id="hamburger" aria-label="選單"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<nav class="nav-mobile">
+<nav class="nav-mobile" id="nav-mobile">
   <a href="index.html">首頁 Home</a>
   <a href="experience.html">體驗 Experience</a>
   <a href="academy.html">訓練 Academy</a>
-  <a href="nationscup.html">Nations Cup 🌏</a><a href="ownership.html">購車 Ownership</a>
-  <a href="contact.html">立即預約 →</a>
+  <a href="nationscup.html">Nations Cup 🌏</a>
+  <a href="ownership.html">購車 Ownership</a>
+  <a href="contact.html" style="color:var(--blue)">立即預約 →</a>
   <div class="nav-mobile-partner">
     <img src="tillotson-logo.png" alt="Tillotson"/>
     <img src="yongan_logo_inverted_keep_red.png" alt="Yong An"/>
   </div>
 </nav>
-<section class="page-hero tech-bg">
+
+<section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="container">
-    <div class="page-hero-label">Experience</div>
-    <h1>感受<br><span class='text-blue'>藍色風暴</span></h1>
-    <p>從記者會到賽道，從首圈到競賽——T4 Series Taiwan 的每一個現場，都是宣言。</p>
+    <div class="page-hero-label">Experience · 體驗</div>
+    <h1>官方<br><span class="text-blue">影像</span></h1>
+    <p>T4 Series Taiwan 官方照片。從賽道空拍到賽車特寫，感受藍色風暴。</p>
   </div>
 </section>
 
 <section class="section" style="background:var(--black)">
   <div class="container">
-    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:52px" class="reveal">
-      <div>
-        <div class="section-label">官方現場 Official Gallery</div>
-        <h2 class="section-title">不只是<br>卡丁車場</h2>
+    <div class="gallery-grid">
+      <div class="gallery-cell">
+        <div class="gallery-inner"><img src="t4-race.jpg" alt="T4 競速" loading="lazy"/></div>
+        <div class="gallery-shade"></div>
+        <div class="gallery-info"><div class="gallery-cat">Racing</div><div class="gallery-title">T4 競速現場</div></div>
       </div>
-      <p style="color:var(--grey-light);font-size:14px;max-width:320px;text-align:right">每一張都是一段賽車旅程的見證<br>這裡是台灣卡丁車歷史的新起點</p>
-    </div>
-    <div class="gallery-grid-uniform" class="mob-1col" style="display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,280px);gap:10px;margin-top:56px;border-radius:6px;overflow:hidden">
-
-      <!-- 1: 多台競速 -->
-      <div style="position:relative;overflow:hidden;background:#050505">
-        <img src="t4-race.jpg" alt="T4 競速" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s"/>
-        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,5,.85) 0%,transparent 55%)"></div>
-        <div style="position:absolute;bottom:14px;left:14px">
-          <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4-blue);margin-bottom:3px">Racing</div>
-          <div style="font-family:var(--font-display);font-size:15px;font-weight:700;text-transform:uppercase">T4 Series 競速現場</div>
-        </div>
+      <div class="gallery-cell">
+        <div class="gallery-inner"><img src="t4-kart-side.jpg" alt="Tillotson T4" loading="lazy"/></div>
+        <div class="gallery-shade"></div>
+        <div class="gallery-info"><div class="gallery-cat">Official Kart</div><div class="gallery-title">Tillotson T4 · CIK-FIA</div></div>
       </div>
-
-      <!-- 2: 賽車特寫 -->
-      <div style="position:relative;overflow:hidden;background:#050505">
-        <img src="t4-kart-side.jpg" alt="Tillotson T4" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s"/>
-        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,5,.85) 0%,transparent 55%)"></div>
-        <div style="position:absolute;bottom:14px;left:14px">
-          <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4-blue);margin-bottom:3px">Official Kart</div>
-          <div style="font-family:var(--font-display);font-size:15px;font-weight:700;text-transform:uppercase">Tillotson T4 · CIK-FIA</div>
-        </div>
+      <div class="gallery-cell">
+        <div class="gallery-inner"><img src="t4-driver.jpg" alt="T4 車手" loading="lazy"/></div>
+        <div class="gallery-shade"></div>
+        <div class="gallery-info"><div class="gallery-cat">Drivers</div><div class="gallery-title">永安 T4 車手陣容</div></div>
       </div>
-
-      <!-- 3: 車手合照 -->
-      <div style="position:relative;overflow:hidden;background:#050505">
-        <img src="t4-driver.jpg" alt="T4 車手" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .6s"/>
-        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,5,.85) 0%,transparent 55%)"></div>
-        <div style="position:absolute;bottom:14px;left:14px">
-          <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4-blue);margin-bottom:3px">Drivers</div>
-          <div style="font-family:var(--font-display);font-size:15px;font-weight:700;text-transform:uppercase">永安 T4 車手陣容</div>
-        </div>
+      <div class="gallery-cell">
+        <div class="gallery-inner"><img src="t4-launch.jpg" alt="T4 發布會" loading="lazy"/></div>
+        <div class="gallery-shade"></div>
+        <div class="gallery-info"><div class="gallery-cat">Official Launch</div><div class="gallery-title">T4 卡丁車發布會</div></div>
       </div>
-
-      <!-- 4: 發布會 -->
-      <div style="position:relative;overflow:hidden;background:#050505">
-        <img src="t4-launch.jpg" alt="T4 發布會" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s"/>
-        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,5,.85) 0%,transparent 55%)"></div>
-        <div style="position:absolute;bottom:14px;left:14px">
-          <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ya-red);margin-bottom:3px">Official Launch</div>
-          <div style="font-family:var(--font-display);font-size:15px;font-weight:700;text-transform:uppercase">T4 卡丁車發布會</div>
-        </div>
+      <div class="gallery-cell">
+        <div class="gallery-inner"><img src="t4-track-aerial.png" alt="永安賽道空拍" loading="lazy" style="object-fit:cover;object-position:center 30%"/></div>
+        <div class="gallery-shade"></div>
+        <div class="gallery-info"><div class="gallery-cat">Track</div><div class="gallery-title">永安賽車場 · 全長1公里</div></div>
       </div>
-
-      <!-- 5: 賽道空拍 -->
-      <div style="position:relative;overflow:hidden;background:#050505">
-        <img src="t4-track-aerial.png" alt="永安賽道空拍" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .6s"/>
-        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,5,.85) 0%,transparent 55%)"></div>
-        <div style="position:absolute;bottom:14px;left:14px">
-          <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4-blue);margin-bottom:3px">Track · 賽道空拍</div>
-          <div style="font-family:var(--font-display);font-size:15px;font-weight:700;text-transform:uppercase">永安賽車場 · 全長1公里</div>
-        </div>
+      <div class="gallery-cell">
+        <div class="gallery-inner"><img src="maxxis-tyre.jpg" alt="MAXXIS T4 輪胎" loading="lazy"/></div>
+        <div class="gallery-shade"></div>
+        <div class="gallery-info"><div class="gallery-cat">Official Tyre</div><div class="gallery-title">MAXXIS T4 · 競技輪胎</div></div>
       </div>
-
-      <!-- 6: MAXXIS 輪胎 -->
-      <div style="position:relative;overflow:hidden;background:#050505">
-        <img src="maxxis-tyre.jpg" alt="MAXXIS T4 輪胎" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s"/>
-        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,5,.85) 0%,transparent 55%)"></div>
-        <div style="position:absolute;bottom:14px;left:14px">
-          <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--t4-blue);margin-bottom:3px">Official Tyre</div>
-          <div style="font-family:var(--font-display);font-size:15px;font-weight:700;text-transform:uppercase">MAXXIS T4 競技輪胎</div>
-        </div>
-      </div>
-
-    </div></div>
-  </div>
-</section>
-
-<section class="section tech-bg" style="background:var(--dark)">
-  <div class="container">
-    <div class="reveal">
-      <div class="section-label">官方影片</div>
-      <h2 class="section-title">親眼看看<br>什麼是 T4</h2>
-      <p class="section-subtitle" style="margin-bottom:0">影片說的比任何文字更直接。這就是 T4 Series Taiwan。</p>
-    </div>
-    <div class="video-wrap reveal">
-      <iframe src="https://www.youtube.com/embed/eKnzy0lJiOk?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="T4 Series Taiwan Official Video"></iframe>
     </div>
   </div>
 </section>
 
-<section class="section" style="background:var(--black)">
+<section class="section" style="background:var(--dark)">
   <div class="container">
-    <div style="text-align:center;max-width:720px;margin:0 auto" class="reveal">
-      <div class="section-label" style="justify-content:center"><span style="display:none"></span>賽道現場</div>
-      <h2 class="section-title">這裡不只是<br>一個賽車場</h2>
-      <p class="section-subtitle" style="text-align:center;margin:0 auto 48px">永安賽車場是北台灣唯一的專業卡丁車場，賽道全長1公里、寬10公尺。2026年正式引進 Tillotson T4 系統，讓台灣車手有機會站上國際舞台。每一場比賽的積分，都是前往西班牙世界盃的門票。</p>
+    <div class="reveal" style="text-align:center;margin-bottom:48px">
+      <div class="section-label" style="justify-content:center"><span></span>關於 T4 賽車</div>
+      <h2 class="section-title">Tillotson T4<br>競技規格</h2>
     </div>
-    <div class="mob-1col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px" class="reveal">
-      <div style="text-align:center;padding:28px 18px;background:var(--dark-2);border:1px solid var(--border);border-radius:6px">
-        <div style="font-size:36px;margin-bottom:12px">🎬</div>
-        <div style="font-family:var(--font-display);font-size:18px;font-weight:800;text-transform:uppercase;margin-bottom:8px">官方記者會</div>
-        <div style="font-size:13px;color:var(--grey-light);line-height:1.6">Tillotson Racing 官方來台，永安賽車場正式宣布引進 T4 Series，台灣卡丁車新時代開始。</div>
-      </div>
-      <div style="text-align:center;padding:28px 18px;background:var(--dark-2);border:1px solid var(--border);border-radius:6px">
-        <div style="font-size:36px;margin-bottom:12px">🏎️</div>
-        <div style="font-family:var(--font-display);font-size:18px;font-weight:800;text-transform:uppercase;margin-bottom:8px">競賽規格車輛</div>
-        <div style="font-size:13px;color:var(--grey-light);line-height:1.6">225cc CIK-FIA 認證引擎、MAXXIS 指定輪胎、ALFANO 7 賽用儀錶，一切都是競賽等級。</div>
-      </div>
-      <div style="text-align:center;padding:28px 18px;background:var(--dark-2);border:1px solid var(--border);border-radius:6px">
-        <div style="font-size:36px;margin-bottom:12px">🌏</div>
-        <div style="font-family:var(--font-display);font-size:18px;font-weight:800;text-transform:uppercase;margin-bottom:8px">國際賽事接軌</div>
-        <div style="font-size:13px;color:var(--grey-light);line-height:1.6">台灣站積分優勝直通西班牙 T4 Nations Cup，與37+國家的車手同場競技。</div>
-      </div>
+    <div class="trust-grid reveal">
+      <div class="trust-item"><div class="trust-icon">🏎️</div><div class="trust-title">225cc 引擎</div><div class="trust-text">Tillotson TPP-225RS T4 專屬引擎，最大馬力 15hp。CIK-FIA 認證系統部件。</div></div>
+      <div class="trust-item"><div class="trust-icon">🏁</div><div class="trust-title">MAXXIS 輪胎</div><div class="trust-text">MAXXIS T4 競技輪胎，官方指定規格，全球統一標準。</div></div>
+      <div class="trust-item"><div class="trust-icon">⚖️</div><div class="trust-title">152kg 最低總重</div><div class="trust-text">T4 RACE 最低總重 152kg，統一競技規格，公平競爭。</div></div>
+      <div class="trust-item"><div class="trust-icon">🌏</div><div class="trust-title">全球 40+ 國家</div><div class="trust-text">Tillotson T4 在全球40個國家設有站點，每年 Nations Cup 聚集 200+ 車手。</div></div>
     </div>
   </div>
 </section>
@@ -195,11 +110,11 @@
   <div class="container">
     <div class="final-cta-top"></div>
     <div class="reveal">
-      <h2>親自來感受<br><span class="text-blue">這一切</span></h2>
-      <p>圖片和影片只是一小部分。最真實的體驗，在賽道上等著你。</p>
+      <h2>感受<br><span class="text-blue">Blue Revolution</span></h2>
+      <p>照片看千遍，不如親身上陣。預約你的第一場 T4 TRY。</p>
       <div class="final-cta-btns">
-        <a href="https://forms.gle/rHUpG8XHZ5UAVDtY7" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-arrow">立即預約</a>
-        <a href="academy.html" class="btn btn-outline btn-lg">了解訓練計畫</a>
+        <a href="https://forms.gle/rHUpG8XHZ5UAVDtY7" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-arrow">立即預約 T4 TRY</a>
+        <a href="index.html#ladder" class="btn btn-outline btn-lg">查看升級路線</a>
       </div>
     </div>
   </div>
@@ -209,39 +124,42 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="t4-logo.png" alt="T4 Series" style="height:60px"/>
+        <img src="t4-logo.png" alt="T4 Series"/>
         <div class="footer-slogan">JOIN THE BLUE REVOLUTION</div>
         <p>T4 Series Taiwan at Yong An Karting<br>台灣唯一 Tillotson T4 官方賽事系統，由永安卡丁賽車場主辦。</p>
         <div class="footer-socials">
-          <a href="https://www.facebook.com/Taoyuan.Yongan.Kart/" class="social-btn red" target="_blank" rel="noopener"><span>f</span> 永安FB</a>
-          <a href="https://www.instagram.com/yongan_karting/" class="social-btn" target="_blank" rel="noopener"><span>◎</span> @yongan_karting</a>
+          <a href="https://www.facebook.com/profile.php?id=61577334663302" class="social-btn" target="_blank" rel="noopener"><span>f</span> T4 Taiwan</a>
+          <a href="https://www.instagram.com/t4series_taiwan/" class="social-btn" target="_blank" rel="noopener"><span>◎</span> @t4series_taiwan</a>
+          <a href="https://www.facebook.com/Taoyuan.Yongan.Kart/" class="social-btn red" target="_blank" rel="noopener"><span>f</span> 永安</a>
+          <a href="https://www.instagram.com/yongan_karting/" class="social-btn red" target="_blank" rel="noopener"><span>◎</span> @yongan_karting</a>
         </div>
       </div>
       <div class="footer-col">
         <div class="footer-col-title">Quick Links</div>
         <a href="index.html">首頁</a><a href="experience.html">體驗</a>
-        <a href="academy.html">訓練</a><a href="nationscup.html">Nations Cup</a><a href="nationscup.html">Nations Cup</a><a href="ownership.html">購車</a><a href="contact.html">預約</a>
+        <a href="academy.html">訓練</a><a href="nationscup.html">Nations Cup</a>
+        <a href="ownership.html">購車</a><a href="contact.html">預約</a>
       </div>
       <div class="footer-col">
-        <div class="footer-col-title">T4 方案</div>
-        <a href="contact.html">T4 TRY — NT$1,500</a>
-        <a href="contact.html">T4 CLUB — NT$2,000</a>
-        <a href="contact.html">T4 RACE — 統規賽</a>
-        <a href="academy.html">Driver Program</a>
-        <a href="ownership.html">T4 購車</a>
+        <div class="footer-col-title">費用</div>
+        <a href="index.html#pricing">GX270 — NT$600</a>
+        <a href="index.html#pricing">TB390 — NT$1,200</a>
+        <a href="contact.html">T4 TRY — NT$3,000</a>
+        <a href="contact.html">T4 CLUB — NT$1,800/節</a>
+        <a href="academy.html">Driver Program — NT$6,200~</a>
       </div>
       <div class="footer-col">
         <div class="footer-col-title">聯絡</div>
         <a href="contact.html">預約表單</a>
+        <a href="tel:034760889">03-476-0889</a>
         <a href="https://www.facebook.com/Taoyuan.Yongan.Kart/" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/yongan_karting/" target="_blank">@yongan_karting</a>
-        <a href="contact.html">FAQ</a>
+        <a href="contact.html#faq">FAQ</a>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="footer-copy">© 2026 T4 Series Taiwan at Yong An Karting · 桃園市新屋區觀海路二段568號 · 03-476-0889</div>
       <div class="footer-partner-logos">
-        <a href="https://tillotson.ie/t4-series/" target="_blank" rel="noopener" title="Tillotson T4 Series Official"><img src="tillotson-logo.png" alt="Tillotson"/></a>
+        <a href="https://tillotson.ie/t4-series/" target="_blank" rel="noopener"><img src="tillotson-logo.png" alt="Tillotson"/></a>
         <img src="yongan_logo_inverted_keep_red.png" alt="Yong An"/>
         <img src="maxxis-logo.png" alt="Maxxis"/>
       </div>
