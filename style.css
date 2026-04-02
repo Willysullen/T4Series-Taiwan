@@ -628,3 +628,47 @@ li { font-size: 14px; line-height: 1.7; }
     .footer-partner-logos img { height: 18px; }
     .section { padding: 48px 0; }
 }
+
+/* === Readability v2 — 字級 & 對比提升 === */
+.stat-label { font-size: 11px; letter-spacing: 0.1em; }
+.race-dates-badge { font-size: 11px; }
+.ladder-badge { font-size: 10px; padding: 4px 10px; }
+.hero-host-label { font-size: 10px; letter-spacing: 0.1em; }
+.footer-slogan { font-size: 11px; letter-spacing: 0.12em; }
+.rdc-month { font-size: 12px; letter-spacing: 0.08em; }
+.price-tier { font-size: 12px; font-weight: 700; }
+.price-per { font-size: 11px; }
+.walkin-note { font-size: 11px; line-height: 1.6; }
+.footer-col-title { font-size: 11px; letter-spacing: 0.12em; }
+.hero-eyebrow-text { font-size: 11px; letter-spacing: 0.14em; }
+.section-label { font-size: 11px; letter-spacing: 0.16em; }
+.host-band-tag { font-size: 11px; letter-spacing: 0.1em; }
+.tl-item-label { font-size: 11px; letter-spacing: 0.1em; }
+.footer-copy { font-size: 12px; line-height: 1.8; }
+.footer-col a { font-size: 13px; }
+.ladder-card-note { font-size: 13px; line-height: 1.65; color: var(--grey-lt); }
+.price-note { font-size: 12px; line-height: 1.65; }
+.price-desc { font-size: 13px; line-height: 1.7; }
+.trust-text { font-size: 13px; color: var(--off); }
+.growth-text { font-size: 13px; color: var(--off); line-height: 1.75; }
+.trust-title { font-size: 16px; }
+.trust-desc { font-size: 14px; line-height: 1.75; color: var(--off); }
+p { font-size: 15px; line-height: 1.85; }
+.about-text { font-size: 15px; line-height: 1.85; color: var(--off); }
+.who-desc { font-size: 14px; line-height: 1.8; }
+.why-desc { font-size: 14px; line-height: 1.8; }
+.contact-label { font-size: 12px; }
+.faq-q { font-size: 15px; line-height: 1.65; }
+.faq-a-inner { font-size: 14px; line-height: 1.8; }
+:lang(zh), [lang="zh"] { line-height: 1.9; }
+.ladder-card-desc { font-size: 13px; line-height: 1.7; color: var(--grey-lt); }
+.footer-brand p { font-size: 13px; line-height: 1.8; color: var(--grey-lt); }
+@media (max-width: 768px) {
+  .section-label { font-size: 10px; }
+  .stat-label { font-size: 10px; }
+  .footer-col a { font-size: 13px; }
+  .footer-copy { font-size: 11px; }
+  p { font-size: 15px; }
+  .trust-title { font-size: 15px; }
+  .ladder-card-note { font-size: 12px; }
+}
