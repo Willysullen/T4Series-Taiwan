@@ -649,3 +649,4 @@ footer { background: var(--black); border-top: 1px solid var(--bdr); padding: 52
 /* NC stats 4-col */
 .nc-stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--bdr); border: 1px solid var(--bdr); border-radius: 6px; overflow: hidden; margin-bottom: 56px; }
 @media (max-width: 600px) { .nc-stats-grid { grid-template-columns: 1fr 1fr !important; } }
+.sched-desc      { font-size: 14px; color: var(--grey-lt); line-height: 1.6; }
