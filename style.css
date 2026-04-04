@@ -278,18 +278,6 @@ body::before { content: ''; position: fixed; inset: 0; background: repeating-lin
 .tl-item-label { font-family: var(--fm); font-size: 8px; letter-spacing: .14em; text-transform: uppercase; color: var(--grey); }
 
 /* ══════════════════════════════════════
-   GROWTH PATH
-══════════════════════════════════════ */
-.growth-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 48px; }
-.growth-card { background: var(--dark-2); border: 1px solid var(--bdr); border-radius: 6px; padding: 24px; transition: all var(--t); }
-.growth-card:hover { border-color: var(--bdr-b); transform: translateY(-3px); }
-.growth-card.red-card { background: linear-gradient(135deg,rgba(212,46,38,.07),var(--dark-2)); border-color: var(--bdr-r); }
-.growth-num { font-family: var(--fd); font-size: 52px; font-weight: 900; color: rgba(26,114,196,.18); line-height: 1; }
-.growth-num.red { color: rgba(212,46,38,.2); }
-.growth-title { font-family: var(--fd); font-size: 16px; font-weight: 800; text-transform: uppercase; margin-bottom: 6px; }
-.growth-text { font-size: 12px; color: var(--grey-lt); line-height: 1.6; }
-
-/* ══════════════════════════════════════
    FINAL CTA
 ══════════════════════════════════════ */
 .final-cta { background: var(--dark); text-align: center; position: relative; overflow: hidden; }
@@ -349,7 +337,7 @@ body::before { content: ''; position: fixed; inset: 0; background: repeating-lin
 
 .gallery-cat{
   font-family:var(--fm);
-  font-size:8px;
+  font-size:12px;
   letter-spacing:.18em;
   text-transform:uppercase;
   color:var(--blue);
@@ -358,7 +346,7 @@ body::before { content: ''; position: fixed; inset: 0; background: repeating-lin
 
 .gallery-title{
   font-family:var(--fd);
-  font-size:13px;
+  font-size:16px;
   font-weight:700;
   text-transform:uppercase;
 }
@@ -604,7 +592,6 @@ footer { background: var(--black); border-top: 1px solid var(--bdr); padding: 52
   .faq-a-inner { font-size: 13px; }
 
   /* Gallery */
-  /* Gallery */
   .gallery-grid{
     display:flex;
     flex-direction:column;
@@ -614,6 +601,14 @@ footer { background: var(--black); border-top: 1px solid var(--bdr); padding: 52
   .gallery-cell{
     height:260px;
   }
+
+  .gallery-cat {
+  font-size: 11px;
+}
+
+.gallery-title {
+  font-size: 14px;
+}
 
   /* Nations Cup */
   .nc-stats-grid { grid-template-columns: 1fr 1fr; }
