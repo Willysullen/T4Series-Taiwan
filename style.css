@@ -487,13 +487,12 @@ footer { background: var(--black); border-top: 1px solid var(--bdr); padding: 52
 .footer-partner-logos { display: flex; align-items: center; gap: 18px; }
 .footer-partner-logos img {
   height: 32px;
-  width: auto;
-  opacity: 0.7;
-  transition: opacity var(--t);
+  opacity: 0.6;
 }
 
 .footer-partner-logos img:hover {
   opacity: 1;
+  transform: translateY(-2px);
 }
 
 /* ══════════════════════════════════════
