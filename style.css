@@ -140,7 +140,7 @@ body::before { content: ''; position: fixed; inset: 0; background: repeating-lin
 .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; animation: fadeUp .8s var(--ease) .8s both; }
 .hero-host { position: absolute; bottom: 32px; right: 28px; z-index: 2; display: flex; align-items: center; gap: 10px; animation: fadeIn 1s ease 1.4s both; }
 .hero-host-label { font-family: var(--fm); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--grey); writing-mode: vertical-rl; }
-.hero-host-logo img { height: 40px; width: auto; filter: brightness(.7); transition: filter var(--t); }
+.hero-host-logo img { height: 50px; width: auto; filter: brightness(.7); transition: filter var(--t); }
 .hero-host-logo img:hover { filter: brightness(1); }
 .hero-scroll { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 6px; animation: fadeIn 1s ease 1.6s both; }
 .hero-scroll span { font-family: var(--fm); font-size: 8px; letter-spacing: .16em; text-transform: uppercase; color: var(--grey); }
@@ -167,7 +167,7 @@ body::before { content: ''; position: fixed; inset: 0; background: repeating-lin
 .host-band-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .host-band-left { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .host-band-tag { font-family: var(--fm); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--red); padding: 3px 8px; border: 1px solid var(--bdr-r); border-radius: 2px; }
-.host-band-logo img { height: 44px; width: auto; }
+.host-band-logo img { height: 50px; width: auto; }
 .host-band-info-name { font-family: var(--fd); font-size: 20px; font-weight: 900; text-transform: uppercase; }
 .host-band-info-sub { font-family: var(--fm); font-size: 10px; color: var(--grey-lt); }
 .host-band-info-sub a { color: var(--red); transition: color var(--t); }
