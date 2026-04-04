@@ -303,17 +303,32 @@ body::before { content: ''; position: fixed; inset: 0; background: repeating-lin
    GALLERY (experience page)
 ══════════════════════════════════════ */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,260px);
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   margin-top: 48px;
+}
+
+.gallery-cell {
+  position: relative;
+  overflow: hidden;
+  background: var(--dark-3);
   border-radius: 6px;
+  height: 420px;
+}
+
+.gallery-inner {
+  position: absolute;
+  inset: 0;
   overflow: hidden;
 }
-.gallery-cell { position: relative; overflow: hidden; background: var(--dark-3); border-radius: 6px; }
-.gallery-inner { position: absolute; inset: 0; overflow: hidden; }
-.gallery-inner img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+
+.gallery-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s var(--ease);
+}
 .gallery-cell:hover .gallery-inner img { transform: scale(1.05); }
 .gallery-shade { position: absolute; inset: 0; background: linear-gradient(to top,rgba(5,5,5,.82),transparent 55%); }
 .gallery-info { position: absolute; bottom: 12px; left: 14px; right: 14px; z-index: 1; }
@@ -548,8 +563,10 @@ footer { background: var(--black); border-top: 1px solid var(--bdr); padding: 52
     display: flex;
     flex-direction: column;
     height: auto;
-  }
-  .gallery-cell { height: 220px; }
+   }
+  .gallery-cell {
+    height: 260px;
+   }
 
   /* Nations Cup */
   .nc-stats-grid { grid-template-columns: 1fr 1fr; }
