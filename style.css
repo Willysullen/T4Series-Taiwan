@@ -485,8 +485,16 @@ footer { background: var(--black); border-top: 1px solid var(--bdr); padding: 52
 .footer-bottom { padding-top: 18px; border-top: 1px solid var(--bdr); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
 .footer-copy { font-size: 10px; color: var(--grey); }
 .footer-partner-logos { display: flex; align-items: center; gap: 18px; }
-.footer-partner-logos img { height: 14px; width: auto; filter: brightness(.35); transition: filter var(--t); }
-.footer-partner-logos img:hover { filter: brightness(.7); }
+.footer-partner-logos img {
+  height: 32px;
+  width: auto;
+  opacity: 0.7;
+  transition: opacity var(--t);
+}
+
+.footer-partner-logos img:hover {
+  opacity: 1;
+}
 
 /* ══════════════════════════════════════
    TECH BG
