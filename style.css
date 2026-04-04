@@ -326,7 +326,8 @@ body::before { content: ''; position: fixed; inset: 0; background: repeating-lin
 .gallery-inner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #000;
   transition: transform .6s var(--ease);
 }
 .gallery-cell:hover .gallery-inner img { transform: scale(1.05); }
