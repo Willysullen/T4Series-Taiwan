@@ -302,9 +302,6 @@ body::before { content: ''; position: fixed; inset: 0; background: repeating-lin
 /* ══════════════════════════════════════
    GALLERY (experience page)
 ══════════════════════════════════════ */
-/* ══════════════════════════════════════
-   GALLERY (experience page)
-══════════════════════════════════════ */
 .gallery-grid{
   display:flex;
   flex-direction:column;
@@ -317,7 +314,7 @@ body::before { content: ''; position: fixed; inset: 0; background: repeating-lin
   overflow:hidden;
   background:var(--dark-3);
   border-radius:6px;
-  height:480px;
+  aspect-ratio: 3 / 2;
 }
 
 .gallery-inner{
