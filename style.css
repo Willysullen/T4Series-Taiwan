@@ -280,13 +280,57 @@ body::before { content: ''; position: fixed; inset: 0; background: repeating-lin
 /* ══════════════════════════════════════
    FINAL CTA
 ══════════════════════════════════════ */
-.final-cta { background: var(--dark); text-align: center; position: relative; overflow: hidden; }
-.final-cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% -10%,rgba(26,114,196,.1),transparent 60%); }
-.final-cta-top { width: 1px; height: 48px; background: linear-gradient(to bottom,transparent,var(--blue)); margin: 0 auto 36px; }
-.final-cta h2 { font-family: var(--fd); font-size: clamp(36px,5.5vw,76px); font-weight: 900; text-transform: uppercase; line-height: .9; margin-bottom: 16px; }
-.final-cta p { font-size: 15px; color: var(--grey-lt); max-width: 420px; margin: 0 auto 32px; line-height: 1.7; }
-.final-cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.final-cta {
+  background: var(--dark);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
 
+.final-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% -10%,rgba(26,114,196,.1),transparent 60%);
+  pointer-events: none;
+}
+
+.final-cta .container,
+.final-cta .reveal {
+  position: relative;
+  z-index: 1;
+}
+
+.final-cta-top {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom,transparent,var(--blue));
+  margin: 0 auto 36px;
+}
+
+.final-cta h2 {
+  font-family: var(--fd);
+  font-size: clamp(36px,5.5vw,76px);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: .9;
+  margin-bottom: 16px;
+}
+
+.final-cta p {
+  font-size: 15px;
+  color: var(--grey-lt);
+  max-width: 420px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+.final-cta-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 /* ══════════════════════════════════════
    GALLERY (experience page)
 ══════════════════════════════════════ */
