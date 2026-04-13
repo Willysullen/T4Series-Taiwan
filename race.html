@@ -49,6 +49,7 @@
   padding:5px 11px; border-radius:99px; white-space:nowrap;
 }
 .status::before { content:'●'; font-size:7px; }
+.status-open   { background:rgba(26,114,196,.15); color:var(--blue-lt);border:1px solid var(--bdr-b); }
 .status-coming { background:rgba(255,193,7,.1);  color:#ffc107; border:1px solid rgba(255,193,7,.3); }
 .status-tba    { background:rgba(255,255,255,.04);color:var(--grey);border:1px solid var(--bdr); }
 .status-nc     { background:rgba(212,46,38,.1);  color:var(--red-lt);border:1px solid var(--bdr-r); }
@@ -235,12 +236,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr style="background:rgba(26,114,196,.03)">
             <td><div class="cal-round">Rd.1</div></td>
-            <td><div class="cal-date">2026.04.26<small>SUN · 全天</small></div></td>
-            <td><div class="cal-desc"><strong>T4 RACE — Round 1</strong><span>排位賽 + 決賽 · 積分站</span></div></td>
+            <td><div class="cal-date">2026.04.26<small>SUN &middot; 全天</small></div></td>
+            <td><div class="cal-desc"><strong>T4 RACE &mdash; Round 1</strong><span>排位賽 + 決賽 &middot; 積分站 &middot; 永安賽車場</span><br><a href="https://forms.gle/rHUpG8XHZ5UAVDtY7" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;margin-top:8px;font-family:var(--fm);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-lt);background:rgba(26,114,196,.12);border:1px solid var(--bdr-b);padding:5px 12px;border-radius:3px;white-space:nowrap">&#9658; 立即報名</a></div></td>
             <td class="cal-loc">永安卡丁賽車場</td>
-            <td><span class="status status-coming">即將開放報名</span></td>
+            <td><span class="status status-open">已開放報名</span></td>
           </tr>
           <tr>
             <td><div class="cal-round">Rd.2</div></td>
@@ -478,6 +479,78 @@
   </div>
 </section>
 
+
+<!-- ══ 5.5. 賽事規範 ══ -->
+<section class="section" style="background:var(--dark)" id="regulations">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">賽事規範</div>
+      <h2 class="section-title">正式<br>賽事規範</h2>
+      <p class="section-subtitle" style="margin-bottom:36px">以下為 T4 Series Taiwan 2026 正式賽事規範重點摘要。完整規章以現場裁判公告為準。</p>
+    </div>
+
+    <!-- FAQ-style accordion -->
+    <div class="reveal" style="max-width:720px">
+
+      <div class="faq-item">
+        <button class="faq-q">參賽資格<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          持有效 T4 CLUB 資格（通過 F 賽道 0:50 連三圈門檻）。外部車手同等門檻適用。參賽者需年滿 16 歲，或持有家長/監護人同意書。正式積分賽出征 Nations Cup 需持有效賽車執照（可透過永安協助申請）。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">車輛與設備規格<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          使用 Tillotson TPP-225RS T4 引擎（CIK-FIA 認證），MAXXIS T4 官方輪胎（統一提供，不得替換）。車手含賽車最低總重 152kg，不足者需配重。賽車需通過賽前技術驗車（Parc Fermé 規則適用於決賽）。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">賽事格式<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          每站包含：自由練習（Warm-up）→ 排位賽（Qualifying）→ 決賽（Final）。排位賽最快單圈決定起跑位置。決賽計入積分，排位賽不計積分。週末場次最低需 5 台起跑，未達台數主辦方保留調整權利。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">積分與排名<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          三站積分累計計入年度總排名（參考積分制：1st 25分，2nd 18分，3rd 15分，4th 12分，5th 10分，以此類推，完賽積 1 分）。積分制度依 Tillotson 原廠公告為最終依據。年度積分冠軍獲 Tillotson 原廠 Voucher，其餘資格車手由永安贊助 Nations Cup 報名費。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">安全裝備規定<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          強制配備：全罩式安全帽（符合 CMR/CIK 認證）、頸部保護器（頸圈）、賽車手套、連身賽車服、賽車鞋。所有裝備於賽前完成驗車，不符規格者不得出賽。裝備可向永安現場詢問租借。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">旗令規則<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          🟢 綠旗：正常賽況，全速行駛。🟡 黃旗：前方危險，禁止超越，減速慢行。🔴 紅旗：賽事中斷，立即減速回坑。🏁 方格旗：計時或決賽結束。🔵 旗：有更快車手即將超越，請讓道。黑旗加號碼：該車手必須立即進站。不遵守旗令者將受罰分或取消成績。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">超越與接觸規則<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          超越須在允許超越區完成，禁止切線逼車或惡意接觸。因不當駕駛造成碰撞者，裁判可判定賦予時間罰則（5 秒或 10 秒）或取消名次。重大接觸事故須填寫事故報告，由裁判委員會裁決。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">費用與退費政策<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          T4 RACE CLUB NT$10,000 / 外部 NT$12,000 per 站。報名確認後，賽前 14 天以上取消可退費 50%；賽前 14 天內取消恕不退費（可轉讓名額，需提前通知）。現有永安套票、票券不適用於 T4 相關項目。
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
 <!-- ══ 6. POINTS ══ -->
 <section class="section" id="points">
   <div class="container">
