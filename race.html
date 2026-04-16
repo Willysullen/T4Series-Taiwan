@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8"/>
@@ -15,158 +16,160 @@
 /* Calendar */
 .race-cal { width:100%; border-collapse:collapse; border-radius:6px; overflow:hidden; }
 .race-cal th {
-  font-family:var(--fm); font-size:10px; letter-spacing:.18em; text-transform:uppercase;
-  color:var(--grey); text-align:left; padding:10px 20px;
-  background:var(--dark-3); border-bottom:1px solid var(--bdr);
+font-family:var(–fm); font-size:10px; letter-spacing:.18em; text-transform:uppercase;
+color:var(–grey); text-align:left; padding:10px 20px;
+background:var(–dark-3); border-bottom:1px solid var(–bdr);
 }
-.race-cal td { padding:18px 20px; border-bottom:1px solid var(--bdr); vertical-align:middle; }
+.race-cal td { padding:18px 20px; border-bottom:1px solid var(–bdr); vertical-align:middle; }
 .race-cal tbody tr:last-child td { border-bottom:none; }
 .race-cal tbody tr:hover td { background:rgba(255,255,255,.02); }
 
-.cal-rnd { font-family:var(--fd); font-size:22px; font-weight:900; color:var(--blue); white-space:nowrap; }
-.cal-rnd.nc { color:var(--red); }
-.cal-date-main { font-family:var(--fd); font-size:15px; font-weight:700; color:var(--off); }
-.cal-date-sub { font-family:var(--fm); font-size:9px; letter-spacing:.1em; color:var(--grey); margin-top:3px; }
-.cal-event { font-size:14px; color:var(--off); font-weight:600; margin-bottom:4px; }
-.cal-sub { font-family:var(--fm); font-size:10px; color:var(--grey); }
+.cal-rnd { font-family:var(–fd); font-size:22px; font-weight:900; color:var(–blue); white-space:nowrap; }
+.cal-rnd.nc { color:var(–red); }
+.cal-date-main { font-family:var(–fd); font-size:15px; font-weight:700; color:var(–off); }
+.cal-date-sub { font-family:var(–fm); font-size:9px; letter-spacing:.1em; color:var(–grey); margin-top:3px; }
+.cal-event { font-size:14px; color:var(–off); font-weight:600; margin-bottom:4px; }
+.cal-sub { font-family:var(–fm); font-size:10px; color:var(–grey); }
 .cal-reg-link {
-  display:inline-flex; align-items:center; gap:5px;
-  margin-top:8px; font-family:var(--fm); font-size:9px; font-weight:700;
-  letter-spacing:.1em; text-transform:uppercase;
-  color:var(--blue); background:rgba(26,114,196,.1);
-  border:1px solid var(--bdr-b); padding:5px 11px; border-radius:3px;
-  transition:background var(--t); white-space:nowrap;
+display:inline-flex; align-items:center; gap:5px;
+margin-top:8px; font-family:var(–fm); font-size:9px; font-weight:700;
+letter-spacing:.1em; text-transform:uppercase;
+color:var(–blue); background:rgba(26,114,196,.1);
+border:1px solid var(–bdr-b); padding:5px 11px; border-radius:3px;
+transition:background var(–t); white-space:nowrap;
 }
 .cal-reg-link:hover { background:rgba(26,114,196,.2); }
-.cal-loc { font-family:var(--fm); font-size:10px; color:var(--grey); }
+.cal-loc { font-family:var(–fm); font-size:10px; color:var(–grey); }
 
 .status-pill {
-  display:inline-flex; align-items:center; gap:5px;
-  font-family:var(--fm); font-size:9px; font-weight:700;
-  letter-spacing:.1em; text-transform:uppercase;
-  padding:5px 11px; border-radius:99px; white-space:nowrap;
+display:inline-flex; align-items:center; gap:5px;
+font-family:var(–fm); font-size:9px; font-weight:700;
+letter-spacing:.1em; text-transform:uppercase;
+padding:5px 11px; border-radius:99px; white-space:nowrap;
 }
-.status-pill::before { content:'●'; font-size:7px; }
-.s-open   { background:rgba(26,114,196,.15); color:var(--blue-lt); border:1px solid var(--bdr-b); }
-.s-tba    { background:rgba(255,255,255,.04); color:var(--grey); border:1px solid var(--bdr); }
-.s-nc     { background:rgba(212,46,38,.1); color:var(--red-lt); border:1px solid var(--bdr-r); }
+.status-pill::before { content:‘●’; font-size:7px; }
+.s-open   { background:rgba(26,114,196,.15); color:var(–blue-lt); border:1px solid var(–bdr-b); }
+.s-tba    { background:rgba(255,255,255,.04); color:var(–grey); border:1px solid var(–bdr); }
+.s-nc     { background:rgba(212,46,38,.1); color:var(–red-lt); border:1px solid var(–bdr-r); }
 
 /* Session times grid */
 .session-grid {
-  display:grid; grid-template-columns:repeat(3,1fr);
-  gap:1px; background:var(--bdr);
-  border:1px solid var(--bdr); border-radius:4px; overflow:hidden;
-  margin:24px 0;
+display:grid; grid-template-columns:repeat(3,1fr);
+gap:1px; background:var(–bdr);
+border:1px solid var(–bdr); border-radius:4px; overflow:hidden;
+margin:24px 0;
 }
-.session-col { background:var(--dark-2); padding:20px 16px; text-align:center; }
+.session-col { background:var(–dark-2); padding:20px 16px; text-align:center; }
 .session-day {
-  font-family:var(--fm); font-size:9px; font-weight:700;
-  letter-spacing:.16em; text-transform:uppercase;
-  color:var(--grey); margin-bottom:14px;
+font-family:var(–fm); font-size:9px; font-weight:700;
+letter-spacing:.16em; text-transform:uppercase;
+color:var(–grey); margin-bottom:14px;
 }
 .session-time {
-  display:block; font-family:var(--fd); font-size:20px; font-weight:700;
-  color:var(--off); padding:8px 0; border-bottom:1px solid var(--bdr);
+display:block; font-family:var(–fd); font-size:20px; font-weight:700;
+color:var(–off); padding:8px 0; border-bottom:1px solid var(–bdr);
 }
 .session-time:last-child { border-bottom:none; }
 
 /* Race price cards — simple 2-col */
 .race-price-grid {
-  display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:32px;
+display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:32px;
 }
 .race-price-card {
-  background:var(--dark-2); border:1px solid var(--bdr); border-radius:6px;
-  padding:28px 24px; transition:border-color var(--t);
+background:var(–dark-2); border:1px solid var(–bdr); border-radius:6px;
+padding:28px 24px; transition:border-color var(–t);
 }
 .race-price-card.primary {
-  border-color:var(--bdr-b);
-  background:linear-gradient(145deg,rgba(26,114,196,.08),var(--dark-2));
+border-color:var(–bdr-b);
+background:linear-gradient(145deg,rgba(26,114,196,.08),var(–dark-2));
 }
 .race-price-card.primary::before {
-  content:''; display:block; height:3px;
-  background:linear-gradient(90deg,var(--blue),var(--blue-lt));
-  border-radius:3px 3px 0 0; margin:-28px -24px 20px;
+content:’’; display:block; height:3px;
+background:linear-gradient(90deg,var(–blue),var(–blue-lt));
+border-radius:3px 3px 0 0; margin:-28px -24px 20px;
 }
-.rp-label { font-family:var(--fm); font-size:9px; letter-spacing:.18em; text-transform:uppercase; color:var(--blue); margin-bottom:4px; }
-.rp-name { font-family:var(--fd); font-size:22px; font-weight:900; text-transform:uppercase; margin-bottom:16px; }
-.rp-amount { font-family:var(--fd); font-size:38px; font-weight:900; line-height:1; color:var(--white); }
-.rp-amount sup { font-size:16px; font-weight:600; color:var(--grey-lt); vertical-align:top; margin-top:6px; display:inline-block; }
-.rp-per { font-family:var(--fm); font-size:9px; color:var(--grey); letter-spacing:.08em; margin-bottom:20px; }
+.rp-label { font-family:var(–fm); font-size:9px; letter-spacing:.18em; text-transform:uppercase; color:var(–blue); margin-bottom:4px; }
+.rp-name { font-family:var(–fd); font-size:22px; font-weight:900; text-transform:uppercase; margin-bottom:16px; }
+.rp-amount { font-family:var(–fd); font-size:38px; font-weight:900; line-height:1; color:var(–white); }
+.rp-amount sup { font-size:16px; font-weight:600; color:var(–grey-lt); vertical-align:top; margin-top:6px; display:inline-block; }
+.rp-per { font-family:var(–fm); font-size:9px; color:var(–grey); letter-spacing:.08em; margin-bottom:20px; }
 .rp-list { list-style:none; display:flex; flex-direction:column; gap:7px; }
-.rp-list li { display:flex; align-items:flex-start; gap:7px; font-size:13px; color:var(--grey-lt); line-height:1.5; }
-.rp-list li::before { content:'✓'; color:var(--blue); font-size:11px; flex-shrink:0; margin-top:1px; }
+.rp-list li { display:flex; align-items:flex-start; gap:7px; font-size:13px; color:var(–grey-lt); line-height:1.5; }
+.rp-list li::before { content:‘✓’; color:var(–blue); font-size:11px; flex-shrink:0; margin-top:1px; }
 
 /* Rules grid */
 .rules-grid {
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:1px; background:var(--bdr); border:1px solid var(--bdr); border-radius:6px; overflow:hidden;
+display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:1px; background:var(–bdr); border:1px solid var(–bdr); border-radius:6px; overflow:hidden;
 }
-.rule-cell { background:var(--dark-2); padding:26px 22px; transition:background var(--t); }
-.rule-cell:hover { background:var(--dark-3); }
-.rule-val { font-family:var(--fd); font-size:26px; font-weight:900; color:var(--blue); display:block; line-height:1; margin-bottom:7px; }
-.rule-name { font-family:var(--fm); font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--off); margin-bottom:9px; }
-.rule-desc { font-size:13px; color:var(--grey-lt); line-height:1.7; }
+.rule-cell { background:var(–dark-2); padding:26px 22px; transition:background var(–t); }
+.rule-cell:hover { background:var(–dark-3); }
+.rule-val { font-family:var(–fd); font-size:26px; font-weight:900; color:var(–blue); display:block; line-height:1; margin-bottom:7px; }
+.rule-name { font-family:var(–fm); font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(–off); margin-bottom:9px; }
+.rule-desc { font-size:13px; color:var(–grey-lt); line-height:1.7; }
 
 /* Points table */
 .pts-table { width:100%; max-width:480px; border-collapse:collapse; border-radius:6px; overflow:hidden; }
-.pts-table th { font-family:var(--fm); font-size:9px; letter-spacing:.16em; text-transform:uppercase; color:var(--grey); text-align:left; padding:10px 18px; background:var(--dark-3); border-bottom:1px solid var(--bdr); }
-.pts-table td { padding:13px 18px; border-bottom:1px solid var(--bdr); }
+.pts-table th { font-family:var(–fm); font-size:9px; letter-spacing:.16em; text-transform:uppercase; color:var(–grey); text-align:left; padding:10px 18px; background:var(–dark-3); border-bottom:1px solid var(–bdr); }
+.pts-table td { padding:13px 18px; border-bottom:1px solid var(–bdr); }
 .pts-table tbody tr:last-child td { border-bottom:none; }
 .pts-table tbody tr:hover td { background:rgba(255,255,255,.02); }
-.pts-pos { font-family:var(--fd); font-size:18px; font-weight:900; color:var(--blue); }
-.pts-pts { font-family:var(--fd); font-size:18px; font-weight:900; color:var(--white); }
-.pts-note { font-family:var(--fm); font-size:10px; color:var(--grey); }
+.pts-pos { font-family:var(–fd); font-size:18px; font-weight:900; color:var(–blue); }
+.pts-pts { font-family:var(–fd); font-size:18px; font-weight:900; color:var(–white); }
+.pts-note { font-family:var(–fm); font-size:10px; color:var(–grey); }
 
 /* Note boxes */
 .note { padding:14px 18px; border-radius:4px; font-size:13px; line-height:1.75; margin-top:20px; }
-.note-warn { background:rgba(212,46,38,.07); border-left:3px solid var(--bdr-r); color:var(--grey-lt); }
-.note-warn strong { color:var(--red-lt); }
-.note-info { background:rgba(26,114,196,.07); border-left:3px solid var(--bdr-b); color:var(--grey-lt); }
-.note-info strong { color:var(--blue-lt); }
+.note-warn { background:rgba(212,46,38,.07); border-left:3px solid var(–bdr-r); color:var(–grey-lt); }
+.note-warn strong { color:var(–red-lt); }
+.note-info { background:rgba(26,114,196,.07); border-left:3px solid var(–bdr-b); color:var(–grey-lt); }
+.note-info strong { color:var(–blue-lt); }
 
 /* Booking box */
 .booking-wrap {
-  max-width:480px; margin:0 auto;
-  background:var(--dark-2); border:1px solid var(--bdr-b);
-  border-radius:6px; overflow:hidden;
+max-width:480px; margin:0 auto;
+background:var(–dark-2); border:1px solid var(–bdr-b);
+border-radius:6px; overflow:hidden;
 }
-.booking-top { height:3px; background:linear-gradient(90deg,var(--blue),var(--blue-lt)); }
+.booking-top { height:3px; background:linear-gradient(90deg,var(–blue),var(–blue-lt)); }
 .booking-inner { padding:36px 32px; text-align:center; }
 .booking-inner img { height:44px; margin:0 auto 18px; }
-.booking-day { font-family:var(--fd); font-size:32px; font-weight:900; color:var(--white); }
-.booking-slots { font-family:var(--fm); font-size:11px; letter-spacing:.1em; color:var(--grey-lt); margin:4px 0 24px; }
+.booking-day { font-family:var(–fd); font-size:32px; font-weight:900; color:var(–white); }
+.booking-slots { font-family:var(–fm); font-size:11px; letter-spacing:.1em; color:var(–grey-lt); margin:4px 0 24px; }
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
-  /* Calendar: hide location col, shrink */
-  .race-cal th:nth-child(4), .race-cal td:nth-child(4) { display:none; }
-  .race-cal th, .race-cal td { padding:12px 10px; }
-  .cal-rnd { font-size:18px; }
-  .cal-event { font-size:13px; }
+/* Calendar: hide location col, shrink */
+.race-cal th:nth-child(4), .race-cal td:nth-child(4) { display:none; }
+.race-cal th, .race-cal td { padding:12px 10px; }
+.cal-rnd { font-size:18px; }
+.cal-event { font-size:13px; }
 
-  /* Session grid: 1 col */
-  .session-grid { grid-template-columns:1fr; }
+/* Session grid: 1 col */
+.session-grid { grid-template-columns:1fr; }
 
-  /* Race prices: 1 col */
-  .race-price-grid { grid-template-columns:1fr; }
-  .race-price-card.primary::before { margin:-28px -24px 20px; }
+/* Race prices: 1 col */
+.race-price-grid { grid-template-columns:1fr; }
+.race-price-card.primary::before { margin:-28px -24px 20px; }
 
-  /* Rules: min 160px so still 2-col on mid screens */
-  .rules-grid { grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); }
+/* Rules: min 160px so still 2-col on mid screens */
+.rules-grid { grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); }
 
-  /* Booking */
-  .booking-inner { padding:24px 20px; }
-  .booking-day { font-size:26px; }
+/* Booking */
+.booking-inner { padding:24px 20px; }
+.booking-day { font-size:26px; }
 }
 @media (max-width: 420px) {
-  .rules-grid { grid-template-columns:1fr; }
-  .race-cal td { padding:10px 8px; }
+.rules-grid { grid-template-columns:1fr; }
+.race-cal td { padding:10px 8px; }
 }
 </style>
+
 </head>
 <body>
 
 <!-- ══ NAV ══ -->
+
 <nav class="navbar" id="navbar">
   <div class="container nav-inner">
     <a href="index.html" class="nav-logo">
@@ -204,6 +207,7 @@
 </nav>
 
 <!-- ══ HERO ══ -->
+
 <section class="page-hero">
   <div class="page-hero-bg"></div>
   <div class="container">
@@ -214,6 +218,7 @@
 </section>
 
 <!-- ══ 1. CALENDAR ══ -->
+
 <section class="section" style="background:var(--dark)" id="calendar">
   <div class="container">
     <div class="reveal">
@@ -241,7 +246,7 @@
             <td>
               <div class="cal-event">T4 RACE — Round 1</div>
               <div class="cal-sub">排位賽 + 決賽 · 積分站</div>
-              <a href="https://forms.gle/e69it2iLot6NPsgB8" target="_blank" rel="noopener" class="cal-reg-link">▸ 立即報名</a>
+              <a href="https://forms.gle/3ThjeDcJz48PwAR67" target="_blank" rel="noopener" class="cal-reg-link">▸ 立即報名</a>
             </td>
             <td class="cal-loc">永安卡丁賽車場</td>
             <td><span class="status-pill s-open">已開放報名</span></td>
@@ -292,6 +297,7 @@
 </section>
 
 <!-- ══ 2. T4 TRY ══ -->
+
 <section class="section" id="try">
   <div class="container">
     <div class="reveal">
@@ -300,55 +306,59 @@
       <p class="section-subtitle">通過 TB390 門檻後首次駕駛 Tillotson T4。兩節套裝，有教學與引導。</p>
     </div>
 
-    <div class="reveal" style="margin-top:32px;max-width:560px">
-      <div class="price-card featured" style="max-width:560px">
-        <div class="price-tier">T4 TRY</div>
-        <div class="price-name">體驗套裝</div>
-        <div class="price-divider"></div>
-        <span class="price-cur">NT$</span><span class="price-amount">3,000</span>
-        <div class="price-per">兩節套裝 · 不可拆</div>
-        <ul class="price-list" style="margin-top:16px">
-          <li>每節 9 分鐘 · 共 2 節</li>
-          <li>8 人限額 · 額滿即止</li>
-          <li>須持有 TB390 通過記錄</li>
-          <li>通過 0:50 連三圈即升 T4 CLUB</li>
-          <li>T4 門檻 0:50 永久固定，不隨賽道月份變動</li>
-          <li>未通過門檻 2 次後，後續每節改 NT$2,000</li>
-        </ul>
-      </div>
-    </div>
+```
+<div class="reveal" style="margin-top:32px;max-width:560px">
+  <div class="price-card featured" style="max-width:560px">
+    <div class="price-tier">T4 TRY</div>
+    <div class="price-name">體驗套裝</div>
+    <div class="price-divider"></div>
+    <span class="price-cur">NT$</span><span class="price-amount">3,000</span>
+    <div class="price-per">兩節套裝 · 不可拆</div>
+    <ul class="price-list" style="margin-top:16px">
+      <li>每節 9 分鐘 · 共 2 節</li>
+      <li>8 人限額 · 額滿即止</li>
+      <li>須持有 TB390 通過記錄</li>
+      <li>通過 0:50 連三圈即升 T4 CLUB</li>
+      <li>T4 門檻 0:50 永久固定，不隨賽道月份變動</li>
+      <li>未通過門檻 2 次後，後續每節改 NT$2,000</li>
+    </ul>
+  </div>
+</div>
 
-    <div class="reveal">
-      <div class="section-label" style="margin-top:36px;margin-bottom:12px">開放時段</div>
-      <div class="session-grid" style="max-width:560px">
-        <div class="session-col">
-          <p class="session-day">週四 THU</p>
-          <span class="session-time">10:30</span>
-          <span class="session-time">11:00</span>
-          <span class="session-time">11:30</span>
-        </div>
-        <div class="session-col">
-          <p class="session-day">週五 FRI</p>
-          <span class="session-time">10:30</span>
-          <span class="session-time">11:00</span>
-          <span class="session-time">11:30</span>
-        </div>
-        <div class="session-col">
-          <p class="session-day">週六 SAT</p>
-          <span class="session-time">10:30</span>
-          <span class="session-time">11:00</span>
-          <span class="session-time">11:30</span>
-        </div>
-      </div>
-      <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
-        <a href="https://forms.gle/e69it2iLot6NPsgB8" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">預約 T4 TRY</a>
-        <a href="contact.html" class="btn btn-outline">聯絡我們</a>
-      </div>
+<div class="reveal">
+  <div class="section-label" style="margin-top:36px;margin-bottom:12px">開放時段</div>
+  <div class="session-grid" style="max-width:560px">
+    <div class="session-col">
+      <p class="session-day">週四 THU</p>
+      <span class="session-time">10:30</span>
+      <span class="session-time">11:00</span>
+      <span class="session-time">11:30</span>
     </div>
+    <div class="session-col">
+      <p class="session-day">週五 FRI</p>
+      <span class="session-time">10:30</span>
+      <span class="session-time">11:00</span>
+      <span class="session-time">11:30</span>
+    </div>
+    <div class="session-col">
+      <p class="session-day">週六 SAT</p>
+      <span class="session-time">10:30</span>
+      <span class="session-time">11:00</span>
+      <span class="session-time">11:30</span>
+    </div>
+  </div>
+  <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+    <a href="https://forms.gle/3ThjeDcJz48PwAR67" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">預約 T4 TRY</a>
+    <a href="contact.html" class="btn btn-outline">聯絡我們</a>
+  </div>
+</div>
+```
+
   </div>
 </section>
 
 <!-- ══ 3. T4 RACE ══ -->
+
 <section class="section" style="background:var(--dark)" id="race">
   <div class="container">
     <div class="reveal">
@@ -357,52 +367,56 @@
       <p class="section-subtitle">Arrive &amp; Drive 或自備賽車均可。三站積分累計，冠軍直通西班牙。</p>
     </div>
 
-    <div class="race-price-grid reveal">
-      <div class="race-price-card primary">
-        <div class="rp-label">T4 CLUB 會員</div>
-        <div class="rp-name">CLUB</div>
-        <div class="rp-amount"><sup>NT$</sup>10,000</div>
-        <div class="rp-per">/ 場</div>
-        <ul class="rp-list">
-          <li>T4 CLUB 資格車手</li>
-          <li>三站積分計入年度排名</li>
-          <li>Arrive &amp; Drive 或自備賽車</li>
-          <li>152kg 最低總重</li>
-          <li>MAXXIS T4 官方指定輪胎</li>
-        </ul>
-      </div>
-      <div class="race-price-card">
-        <div class="rp-label">外部車手</div>
-        <div class="rp-name">外部</div>
-        <div class="rp-amount"><sup>NT$</sup>12,000</div>
-        <div class="rp-per">/ 場</div>
-        <ul class="rp-list">
-          <li>非 CLUB 會員資格</li>
-          <li>三站積分計入年度排名</li>
-          <li>需達 0:50 計時門檻</li>
-          <li>152kg 最低總重</li>
-          <li>MAXXIS T4 官方指定輪胎</li>
-        </ul>
-      </div>
-    </div>
+```
+<div class="race-price-grid reveal">
+  <div class="race-price-card primary">
+    <div class="rp-label">T4 CLUB 會員</div>
+    <div class="rp-name">CLUB</div>
+    <div class="rp-amount"><sup>NT$</sup>10,000</div>
+    <div class="rp-per">/ 場</div>
+    <ul class="rp-list">
+      <li>T4 CLUB 資格車手</li>
+      <li>三站積分計入年度排名</li>
+      <li>Arrive &amp; Drive 或自備賽車</li>
+      <li>152kg 最低總重</li>
+      <li>MAXXIS T4 官方指定輪胎</li>
+    </ul>
+  </div>
+  <div class="race-price-card">
+    <div class="rp-label">外部車手</div>
+    <div class="rp-name">外部</div>
+    <div class="rp-amount"><sup>NT$</sup>12,000</div>
+    <div class="rp-per">/ 場</div>
+    <ul class="rp-list">
+      <li>非 CLUB 會員資格</li>
+      <li>三站積分計入年度排名</li>
+      <li>需達 0:50 計時門檻</li>
+      <li>152kg 最低總重</li>
+      <li>MAXXIS T4 官方指定輪胎</li>
+    </ul>
+  </div>
+</div>
 
-    <div class="note note-warn reveal">
-      <strong>⚠ 重要：</strong>現有永安套票、票券不適用於 T4 相關項目，費用獨立計算。
-    </div>
+<div class="note note-warn reveal">
+  <strong>⚠ 重要：</strong>現有永安套票、票券不適用於 T4 相關項目，費用獨立計算。
+</div>
 
-    <div class="reveal" style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
-      <a href="https://forms.gle/e69it2iLot6NPsgB8" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">報名 Rd.1</a>
-      <a href="contact.html" class="btn btn-outline">聯絡詢問</a>
-    </div>
+<div class="reveal" style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
+  <a href="https://forms.gle/3ThjeDcJz48PwAR67" target="_blank" rel="noopener" class="btn btn-primary btn-arrow">報名 Rd.1</a>
+  <a href="contact.html" class="btn btn-outline">聯絡詢問</a>
+</div>
 
-    <div class="reveal" style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
-      <a href="https://drive.google.com/file/d/1XZ0i8rOQKmT_LbcP9Xa7XAckUmppUemb/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline">📄 賽事規則書</a>
-      <a href="https://drive.google.com/file/d/1z7WJq1Nf_suk_X9gZ4s-foPFHjCS_lyy/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline">📄 車手簡報</a>
-    </div>
+<div class="reveal" style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+  <a href="https://drive.google.com/file/d/1XZ0i8rOQKmT_LbcP9Xa7XAckUmppUemb/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline">📄 賽事規則書</a>
+  <a href="https://drive.google.com/file/d/1z7WJq1Nf_suk_X9gZ4s-foPFHjCS_lyy/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline">📄 車手簡報</a>
+</div>
+```
+
   </div>
 </section>
 
 <!-- ══ 4. TECH RULES ══ -->
+
 <section class="section tech-bg" id="rules">
   <div class="container">
     <div class="reveal">
@@ -418,7 +432,7 @@
       <div class="rule-cell">
         <span class="rule-val">152 kg</span>
         <div class="rule-name">最低總重</div>
-        <p class="rule-desc">車手含賽車最低 152kg。賽前強制過磅。主辦方將依您的體重預先配置配重鉛塊，若加滿配重仍未達標，將主動通知  並取消報名資格。  <br>最高配重 <strong style="color:var(--off)">30 kg</strong>。</p
+        <p class="rule-desc">車手加賽車最低總重 152kg。主辦方依體重預先配置鉛塊，加滿仍未達標者取消報名資格。<br>最高配重 <strong style="color:var(--off)">30 kg</strong>。</p>
       </div>
       <div class="rule-cell">
         <span class="rule-val">MAXXIS T4</span>
@@ -438,18 +452,19 @@
       <div class="rule-cell">
         <span class="rule-val">全罩安全帽</span>
         <div class="rule-name">強制安全裝備</div>
-        <p class="rule-desc">全罩安全帽、手套、連身賽車服、賽車鞋、18歲以下強制佩戴護頸。賽前驗車，不符規格不得出賽。</p>
+        <p class="rule-desc">全罩安全帽、手套、連身賽車服、賽車鞋。18 歲以下強制配戴頸圈。賽前驗裝，不符規格不得出賽。</p>
       </div>
       <div class="rule-cell">
-        <span class="rule-val">A&amp;D / Own</span>
-        <div class="rule-name">車輛選擇</div>
-        <p class="rule-desc">可使用永安租借賽車或自備賽車。購車資訊 <a href="ownership.html" style="color:var(--blue)">見購車頁 →</a></p>
+        <span class="rule-val">統規</span>
+        <div class="rule-name">車輛分配</div>
+        <p class="rule-desc">統規賽事，所有賽車由永安統一備置及分配。車手不得要求特定賽車。</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ══ 5. REGULATIONS ══ -->
+
 <section class="section" style="background:var(--dark)" id="regulations">
   <div class="container">
     <div class="reveal">
@@ -458,57 +473,61 @@
       <p class="section-subtitle">完整規章以現場裁判公告為準。</p>
     </div>
 
-    <div class="reveal" style="margin-top:32px;max-width:720px">
+```
+<div class="reveal" style="margin-top:32px;max-width:720px">
 
-      <div class="faq-item">
-        <button class="faq-q">參賽資格<span class="faq-icon">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">
-          持有效 T4 CLUB 資格（通過 F 賽道 0:50 連三圈門檻）。外部車手適用同等門檻。參賽者需年滿 16 歲，或持有家長 / 監護人同意書。出征 Nations Cup 需持有效賽車執照（可透過永安協助申請）。
-        </div></div>
-      </div>
+  <div class="faq-item">
+    <button class="faq-q">參賽資格<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">
+      持有效 T4 CLUB 資格（通過 F 賽道 0:50 連三圈門檻）。外部車手適用同等門檻。參賽者需年滿 16 歲，或持有家長 / 監護人同意書。出征 Nations Cup 需持有效賽車執照（可透過永安協助申請）。
+    </div></div>
+  </div>
 
-      <div class="faq-item">
-        <button class="faq-q">賽事流程<span class="faq-icon">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">
-          <strong style="color:var(--off)">本站賽制（A/B 分組 · 共 32 台）</strong><br><br>
-          本站分 A、B 兩組，每組 16 台，各自獨立進行測時賽與預決賽，最終合併舉行決賽。<br><br>
-          <strong style="color:var(--blue-lt)">① 自由練習</strong>（Free Practice）<br>
-          全場開放，熟悉賽道與賽車設定。<br><br>
-          <strong style="color:var(--blue-lt)">② 測時賽</strong>（Qualifying · A 組 / B 組分別進行）<br>
-          各組各自出場，最快單圈決定預決賽起跑格位，不計積分。<br><br>
-          <strong style="color:var(--blue-lt)">③ 預決賽</strong>（Pre-Final · A 組 / B 組分別進行）<br>
-          各組 16 台獨立出賽，成績決定決賽起跑格位。各組前 8 名晉級決賽。<br><br>
-          <strong style="color:var(--blue-lt)">④ 決賽</strong>（Final · A + B 合併 · 共 16 台）<br>
-          A 組前 8 名 + B 組前 8 名合併出賽，決賽成績計入年度積分排名。
-        </div></div>
-      </div>
+  <div class="faq-item">
+    <button class="faq-q">賽事流程<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">
+      <strong style="color:var(--off)">本站賽制（A/B 分組 · 共 32 台）</strong><br><br>
+      本站分 A、B 兩組，每組 16 台，各自獨立進行測時賽與預決賽，最終合併舉行決賽。<br><br>
+      <strong style="color:var(--blue-lt)">① 自由練習</strong>（Free Practice）<br>
+      全場開放，熟悉賽道與賽車設定。<br><br>
+      <strong style="color:var(--blue-lt)">② 測時賽</strong>（Qualifying · A 組 / B 組分別進行）<br>
+      各組各自出場，最快單圈決定預決賽起跑格位，不計積分。<br><br>
+      <strong style="color:var(--blue-lt)">③ 預決賽</strong>（Pre-Final · A 組 / B 組分別進行）<br>
+      各組 16 台獨立出賽，成績決定決賽起跑格位。各組前 8 名晉級決賽。<br><br>
+      <strong style="color:var(--blue-lt)">④ 決賽</strong>（Final · A + B 合併 · 共 16 台）<br>
+      A 組前 8 名 + B 組前 8 名合併出賽，決賽成績計入年度積分排名。
+    </div></div>
+  </div>
 
-      <div class="faq-item">
-        <button class="faq-q">旗令規則<span class="faq-icon">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">
-          🟢 綠旗：全速正常行駛。&nbsp; 🟡 黃旗：前方危險，禁止超越，減速慢行。&nbsp; 🔴 紅旗：賽事中斷，立即減速並準備停車，等候競賽長或裁判旗手指示停車位置，未獲指示前不得隨意熄火或離車。&nbsp; 🏁 方格旗：計時或決賽結束。&nbsp; 🔵 藍旗：後方有更快車手，請讓道。&nbsp; 黑旗加號碼板：立即進站。不遵守旗令者將受時間罰則或取消成績。
-        </div></div>
-      </div>
+  <div class="faq-item">
+    <button class="faq-q">旗令規則<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">
+      🟢 綠旗：全速正常行駛。&nbsp; 🟡 黃旗：前方危險，禁止超越，減速慢行。&nbsp; 🔴 紅旗：賽事中斷，立即減速並準備停車，等候競賽長或裁判旗手指示停車位置，未獲指示前不得隨意熄火或離車。&nbsp; 🏁 方格旗：計時或決賽結束。&nbsp; 🔵 藍旗：後方有更快車手，請讓道。&nbsp; 黑旗加號碼板：立即進站。不遵守旗令者將受時間罰則或取消成績。
+    </div></div>
+  </div>
 
-      <div class="faq-item">
-        <button class="faq-q">超越與接觸<span class="faq-icon">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">
-          超越須在允許區完成，禁止切線逼車或惡意接觸。因不當駕駛造成碰撞者，裁判可判定 5 秒或 10 秒時間罰則，或取消名次。重大事故須填寫報告，由裁判委員會裁決。
-        </div></div>
-      </div>
+  <div class="faq-item">
+    <button class="faq-q">超越與接觸<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">
+      超越須在允許區完成，禁止切線逼車或惡意接觸。因不當駕駛造成碰撞者，裁判可判定 5 秒或 10 秒時間罰則，或取消名次。重大事故須填寫報告，由裁判委員會裁決。
+    </div></div>
+  </div>
 
-      <div class="faq-item">
-        <button class="faq-q">退費政策<span class="faq-icon">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">
-          賽前 14 天以上取消可退費 50%。賽前 14 天內取消恕不退費，但可轉讓名額（需提前通知）。
-        </div></div>
-      </div>
+  <div class="faq-item">
+    <button class="faq-q">退費政策<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">
+      賽前 14 天以上取消可退費 50%。賽前 14 天內取消恕不退費，但可轉讓名額（需提前通知）。
+    </div></div>
+  </div>
 
-    </div>
+</div>
+```
+
   </div>
 </section>
 
 <!-- ══ 6. POINTS ══ -->
+
 <section class="section" id="points">
   <div class="container">
     <div class="reveal">
@@ -517,60 +536,68 @@
       <p class="section-subtitle">三站積分累計，年度冠軍直通西班牙。詳見 <a href="nationscup.html" style="color:var(--blue)">Nations Cup 頁面 →</a></p>
     </div>
 
-    <div class="reveal" style="margin-top:32px;background:var(--dark-2);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;max-width:480px">
-      <table class="pts-table">
-        <thead>
-          <tr><th>名次</th><th>積分</th><th>備註</th></tr>
-        </thead>
-        <tbody>
-          <tr><td class="pts-pos">1st</td><td class="pts-pts">25</td><td class="pts-note">年度冠軍 → Tillotson Voucher</td></tr>
-          <tr><td class="pts-pos">2nd</td><td class="pts-pts">18</td><td></td></tr>
-          <tr><td class="pts-pos">3rd</td><td class="pts-pts">15</td><td></td></tr>
-          <tr><td class="pts-pos">4th</td><td class="pts-pts">12</td><td></td></tr>
-          <tr><td class="pts-pos">5th</td><td class="pts-pts">10</td><td></td></tr>
-          <tr><td class="pts-pos">6th</td><td class="pts-pts">8</td><td></td></tr>
-          <tr><td class="pts-pos">7th</td><td class="pts-pts">6</td><td></td></tr>
-          <tr><td class="pts-pos">8th</td><td class="pts-pts">4</td><td></td></tr>
-          <tr><td class="pts-pos">9th</td><td class="pts-pts">2</td><td></td></tr>
-          <tr><td class="pts-pos">10th+</td><td class="pts-pts">1</td><td class="pts-note">完賽積 1 分</td></tr>
-        </tbody>
-      </table>
-    </div>
+```
+<div class="reveal" style="margin-top:32px;background:var(--dark-2);border:1px solid var(--bdr);border-radius:6px;overflow:hidden;max-width:480px">
+  <table class="pts-table">
+    <thead>
+      <tr><th>名次</th><th>積分</th><th>備註</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="pts-pos">1st</td><td class="pts-pts">25</td><td class="pts-note">年度冠軍 → Tillotson Voucher</td></tr>
+      <tr><td class="pts-pos">2nd</td><td class="pts-pts">18</td><td></td></tr>
+      <tr><td class="pts-pos">3rd</td><td class="pts-pts">15</td><td></td></tr>
+      <tr><td class="pts-pos">4th</td><td class="pts-pts">12</td><td></td></tr>
+      <tr><td class="pts-pos">5th</td><td class="pts-pts">10</td><td></td></tr>
+      <tr><td class="pts-pos">6th</td><td class="pts-pts">8</td><td></td></tr>
+      <tr><td class="pts-pos">7th</td><td class="pts-pts">6</td><td></td></tr>
+      <tr><td class="pts-pos">8th</td><td class="pts-pts">4</td><td></td></tr>
+      <tr><td class="pts-pos">9th</td><td class="pts-pts">2</td><td></td></tr>
+      <tr><td class="pts-pos">10th+</td><td class="pts-pts">1</td><td class="pts-note">完賽積 1 分</td></tr>
+    </tbody>
+  </table>
+</div>
+```
+
   </div>
 </section>
 
 <!-- ══ 7. CTA ══ -->
+
 <section class="section final-cta" id="booking">
   <div class="container reveal">
     <div class="final-cta-top"></div>
     <h2>準備好了？<br>上場吧。</h2>
     <p>填表後 24 小時內電話確認，週二、三公休。<br>GX270 / TB390 無需預約，直接現場走入。</p>
 
-    <div class="booking-wrap" style="margin:40px auto 0">
-      <div class="booking-top"></div>
-      <div class="booking-inner">
-        <img src="t4-logo.png" alt="T4 Series"/>
-        <div style="font-family:var(--fm);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--grey);margin-bottom:6px">T4 TRY / CLUB / RACE 預約時段</div>
-        <div class="booking-day">週四 · 五 · 六</div>
-        <div class="booking-slots">10:30 ／ 11:00 ／ 11:30</div>
-        <a href="https://forms.gle/e69it2iLot6NPsgB8" target="_blank" rel="noopener"
-           class="btn btn-primary btn-arrow" style="width:100%;justify-content:center;margin-bottom:16px">
-          開啟 Google 預約表單
-        </a>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://forms.gle/e69it2iLot6NPsgB8&bgcolor=141414&color=ffffff&margin=8"
-             alt="QR" width="96" height="96" style="margin:0 auto 10px;border-radius:4px"/>
-        <div style="font-family:var(--fm);font-size:9px;letter-spacing:.1em;color:var(--grey)">掃描 QR Code 預約</div>
-      </div>
-    </div>
+```
+<div class="booking-wrap" style="margin:40px auto 0">
+  <div class="booking-top"></div>
+  <div class="booking-inner">
+    <img src="t4-logo.png" alt="T4 Series"/>
+    <div style="font-family:var(--fm);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--grey);margin-bottom:6px">T4 TRY / CLUB / RACE 預約時段</div>
+    <div class="booking-day">週四 · 五 · 六</div>
+    <div class="booking-slots">10:30 ／ 11:00 ／ 11:30</div>
+    <a href="https://forms.gle/3ThjeDcJz48PwAR67" target="_blank" rel="noopener"
+       class="btn btn-primary btn-arrow" style="width:100%;justify-content:center;margin-bottom:16px">
+      開啟 Google 預約表單
+    </a>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://forms.gle/3ThjeDcJz48PwAR67&bgcolor=141414&color=ffffff&margin=8"
+         alt="QR" width="96" height="96" style="margin:0 auto 10px;border-radius:4px"/>
+    <div style="font-family:var(--fm);font-size:9px;letter-spacing:.1em;color:var(--grey)">掃描 QR Code 預約</div>
+  </div>
+</div>
 
-    <div class="final-cta-btns" style="margin-top:20px">
-      <a href="tel:034760889" class="btn btn-outline">📞 03-476-0889</a>
-      <a href="contact.html" class="btn btn-outline">更多聯絡方式</a>
-    </div>
+<div class="final-cta-btns" style="margin-top:20px">
+  <a href="tel:034760889" class="btn btn-outline">📞 03-476-0889</a>
+  <a href="contact.html" class="btn btn-outline">更多聯絡方式</a>
+</div>
+```
+
   </div>
 </section>
 
 <!-- ══ FOOTER ══ -->
+
 <footer>
   <div class="footer-topbar"></div>
   <div class="container">
@@ -627,5 +654,6 @@
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
